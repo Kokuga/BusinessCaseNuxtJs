@@ -52,7 +52,7 @@ export default {
 	],
 
 	axios: {
-		baseURL: 'https://localhost:8000',
+		baseURL: 'http://api-kokuga-business.mywebcommunity.org/public/index.php/',
 		credentials: false,
 		proxyHeaders: true,
 		headers: {
