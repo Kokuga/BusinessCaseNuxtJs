@@ -160,7 +160,6 @@ export default {
 				}
 			}
 		);
-		console.log(data['data']['hydra:member'])
 		return {
 			users: data['data']['hydra:member'],
 		}

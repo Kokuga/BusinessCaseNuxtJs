@@ -207,7 +207,6 @@ export default {
 				}
 			}
 		)
-		console.log(carburant);
 		return {
 			carburants: carburant['hydra:member'],
 			annonces: data['hydra:member'],

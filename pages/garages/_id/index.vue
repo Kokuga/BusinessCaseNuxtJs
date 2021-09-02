@@ -73,7 +73,6 @@ export default {
 				}
 			}
 		);
-		console.log(data['data']['annonces'].length)
 		return {
 			garage: data['data'],
 			countAnnonce: data['data']['annonces'].length

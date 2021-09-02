@@ -179,7 +179,6 @@ export default {
 	methods: {
 		handleFileUpload() {
 			this.file = this.$refs.file.files;
-			console.log(this.file.length)
 			for (let i = 0; i <= this.file.length-1; i++) {
 				this.getBase64(this.file[i])
 					.then((res) => {
@@ -206,12 +205,10 @@ export default {
 					}
 				}
 			)
-			console.log(this.$route.params['id']);
 			this.modeles = modeleTest['modeles']
 		},
 
 		async onSubmit() {
-			console.log(this.result)
 			await this.$axios.post('/annonce/create', {
 				title: this.title,
 				price: this.price,

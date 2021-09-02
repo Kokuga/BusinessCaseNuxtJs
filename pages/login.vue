@@ -19,7 +19,7 @@
 					</div>
 					<div>
 						<p class="mt-4 font-semibold xl:text-xl text-2xl" for="password">Mot de passe</p>
-						<input v-model="password" class="bg-gray-200 border-gray-600 border text-gray-700 rounded-lg px-6 py-2"
+						<input type="password" v-model="password" class="bg-gray-200 border-gray-600 border text-gray-700 rounded-lg px-6 py-2"
 							   id="password"
 							   name="password">
 					</div>
@@ -60,11 +60,10 @@ export default {
 	},
 	methods: {
 		async getUser(username, token) {
-
 			const user = await this.$axios.get(
 				`/api/professionnels?_page=1&username=${username}`, {
 					'headers' : {
-						'Authorization': localStorage.getItem('authToken'),
+						'Authorization': token,
 					}
 				}
 			)
@@ -87,7 +86,7 @@ export default {
 					this.token = 'Bearer ' + response.data.token;
 					this.getUser(this.username, this.token);
 					this.$router.push({ name: "index" });
-					console.log(localStorage.getItem("authToken"));
+
 				},
 				response => {
 					this.error = true

@@ -249,7 +249,6 @@ export default {
 				}
 			}
 		)
-		console.log(data['data']['garages'][0]['annonces'][0]['photos'])
 
 		return {
 			garages: data['data']['garages'],

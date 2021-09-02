@@ -132,7 +132,6 @@ export default {
 				}
 			);
 			this.garages = data['hydra:member']
-			console.log(this.garages);
 		},
 		async resetFilter() {
 			this.title = ''
