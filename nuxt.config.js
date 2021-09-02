@@ -8,7 +8,7 @@ export default {
 	target: 'static',
 
 	env: {
-		baseUrl: 'http://api-kokuga-business.mywebcommunity.org/public/index.php/',
+		baseUrl: 'https://localhost:8000/',
 		GOOGLE_ANALYTICS_ID : 'G-'
 	},
 
@@ -52,7 +52,7 @@ export default {
 	],
 
 	axios: {
-		baseURL: 'http://api-kokuga-business.mywebcommunity.org/public/index.php/',
+		baseURL: 'https://localhost:8000/',
 		credentials: false,
 		proxyHeaders: true,
 		headers: {
