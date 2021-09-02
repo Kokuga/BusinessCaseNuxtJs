@@ -8,7 +8,7 @@ export default {
 	target: 'static',
 
 	env: {
-		baseUrl: 'https://localhost:8000/',
+		baseUrl: 'http://api-kokuga-business.mywebcommunity.org/public/index.php/',
 		GOOGLE_ANALYTICS_ID : 'G-'
 	},
 
