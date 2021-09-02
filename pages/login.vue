@@ -87,6 +87,7 @@ export default {
 					this.token = 'Bearer ' + response.data.token;
 					this.getUser(this.username, this.token);
 					this.$router.push({ name: "index" });
+					console.log(localStorage.getItem("authToken"));
 				},
 				response => {
 					this.error = true
