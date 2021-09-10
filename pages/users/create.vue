@@ -124,13 +124,11 @@ export default {
 					}
 				}
 			).then((res) => {
-				if(res.roles[0] !== 'ROLE_ADMIN') {
-					this.$router.push({name: '/'})
+				if(localStorage.getItem('userRoles') === 'ROLE_ADMIN') {
+					this.$router.push({name: 'index'})
 				}
 			})
-			.then((res) => {
-				this.$router.push({name: '/'})
-			});
+
 
 
 
