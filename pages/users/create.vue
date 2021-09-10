@@ -82,7 +82,7 @@ export default {
 	},
 
 	mounted() {
-		if(localStorage.getItem('authToken') == null || localStorage.getItem('userId') == null) {
+		if(localStorage.getItem('authToken') == null) {
 			this.$router.push({name: 'index'})
 		} else {
 			this.asyncData()
@@ -124,7 +124,7 @@ export default {
 					}
 				}
 			).then((res) => {
-				if(localStorage.getItem('userRoles') === 'ROLE_ADMIN') {
+				if(localStorage.getItem('userRoles') !== 'ROLE_ADMIN') {
 					this.$router.push({name: 'index'})
 				}
 			})
