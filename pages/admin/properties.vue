@@ -262,7 +262,7 @@ export default {
 		async onSubmit(event) {
 
 			const data = await this.$axios.$get(
-				`/api/annonces?_page=1&title=${this.titleAnnonce}&refAnnonce=${this.refAnnonce}&Carburant.id=${this.carburantForm}&Modele.id=${this.modeleForm}&Modele.marque.id=${this.marqueForm}&anneeCirculation%5Bbetween%5D=${this.yearForm}&kilometrage%5Bbetween%5D=${this.kmForm}&price=${this.priceForm}`, {
+				`/api/annonces?_page=1&title=${this.titleAnnonce}&refAnnonce=${this.refAnnonce}&Carburant.id=${this.carburantForm}&Modele.id=${this.modeleForm}&Modele.marque.id=${this.marqueForm}&anneeCirculation=${this.yearForm}&kilometrage%5Bbetween%5D=${this.kmForm}&price%5Bbetween%5D=${this.priceForm}`, {
 					'headers': {
 						'Authorization': localStorage.getItem('authToken')
 					}
