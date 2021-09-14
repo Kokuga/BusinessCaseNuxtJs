@@ -49,11 +49,10 @@
 								class="lg:mt-8 w-full mt-12  block px-6 py-2 border-purple-400  mx-auto lg:w-full w-auto  rounded-lg  border-2 hover:border-purple-800"
 								name="annee">
 								<option value="">Choississez une année</option>
-								<option value="1980..1990">Entre 1980 et 1990</option>
-								<option value="1990..2000">Entre 1990 et 2000</option>
-								<option value="2000..2010">Entre 2000 et 2010</option>
-								<option value="2010..2020">Entre 2010 et 2020</option>
-								<option value="2021..2021">2021</option>
+								<option v-for="(n,index) in 10" v-bind:value="'198' + index">198{{ index }}</option>
+								<option v-for="(n,index) in 10" v-bind:value="'199' + index">199{{ index }}</option>
+								<option v-for="(n,index) in 10" v-bind:value="'200' + index">200{{ index }}</option>
+								<option v-for="(n,index) in 12" v-bind:value="'20' + index + 11">20{{ index + 10 }}</option>
 							</select>
 						</div>
 						<div>
