@@ -42,9 +42,6 @@
 						<p class="xl:text-base text-2xl"><span
 							class="text-xl font-bold text-purple-800  xl:text-base text-2xl">Email :</span>
 							{{ user.email }}</p>
-						<p class="xl:text-base text-2xl"><span
-							class="text-xl font-bold text-purple-800  xl:text-base text-2xl">Mot de passe :</span>
-							{{ user.password }}</p>
 					</div>
 				</div>
 				<div class=" mb-5">
@@ -68,9 +65,14 @@
 export default {
 	name: "userIndex",
 
+	mounted() {
+		if (this.$route.params.id !== localStorage.getItem('userId')) {
+			this.$router.push({name: "index"});
+		}
+	},
+
 
 	async asyncData({$axios, params}) {
-
 		const data = await $axios.get(
 			`/api/professionnels/${params.id}`, {
 				'headers': {
@@ -85,7 +87,6 @@ export default {
 		}
 	},
 
-	methods: {}
 }
 </script>
 

@@ -99,7 +99,6 @@ export default {
 					this.userId = this.$route.params.id;
 					this.username = res['data'].username;
 					this.phone = res['data'].phone;
-					this.password = res['data'].password;
 					this.email = res['data'].email;
 					this.firstName = res['data'].first_name;
 					this.lastName = res['data'].last_name;
