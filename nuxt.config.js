@@ -8,7 +8,7 @@ export default {
 	target: 'static',
 
 	env: {
-		baseUrl: 'https://localhost:8000/',
+		baseUrl: 'http://78.241.28.199:8081',
 		GOOGLE_ANALYTICS_ID : 'G-'
 	},
 
@@ -52,7 +52,7 @@ export default {
 	],
 
 	axios: {
-		baseURL: 'https://localhost:8000/',
+		baseURL: 'http://78.241.28.199:8081',
 		credentials: false,
 		proxyHeaders: true,
 		headers: {

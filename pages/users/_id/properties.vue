@@ -81,7 +81,9 @@
 								class="lg:mt-8 w-full mt-12  block px-6 py-2 border-purple-400  mx-auto rounded-lg lg:w-full w-auto   border-2 hover:border-purple-800"
 								name="km">
 								<option value="">Choisissez le kilométrage</option>
-								<option value="10000">10 000 km</option>
+								<option value="0..1000">Entre 0 et 1 000 km</option>
+								<option value="1000..10000">Entre 1 000 et 10 000 km</option>
+								<option value="10000..100000">Entre 10 000 et 100 000 km</option>
 							</select>
 						</div>
 						<div>
