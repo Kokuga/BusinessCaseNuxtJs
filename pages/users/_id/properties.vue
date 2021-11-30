@@ -1,7 +1,7 @@
 <template>
 	<div class="block bg-gray-100  w-screen">
 		<div class="block bg-gray-100 h-full">
-			<div class="bg-white pt-4 py-10 mt-5 mx-32 shadow-sm border rounded-lg  hover:border-purple-800">
+			<div class="bg-white pt-4 py-10 mt-5 lg:mx-32 md:mx-16 mx-2 shadow-sm border rounded-lg  hover:border-purple-800">
 				<div class="mt-4 text-center mb-16">
 					<p class="text-3xl font-semibold text-gray-900">Rechercher</p>
 					<button
@@ -121,7 +121,7 @@
 			</div>
 			<div v-if="annonces === undefined" v-for="garage in garages" class="mt-8 sm:mt-4 py-5 md:px-16 ">
 				<h2 class="mt-8 text-center text-3xl">{{ garage.name }}</h2>
-				<p class="xl:text-base text-xl text-gray-600 ">Nombre d'annonces : {{ garage.annonces.length }}</p>
+				<p class="xl:text-base text-xl lg:text-left text-center text-gray-600 ">Nombre d'annonces : {{ garage.annonces.length }}</p>
 				<div class="flex justify-center">
 					<div class="mt-8 w-72 h-0 border-gray-500 border"></div>
 				</div>
@@ -130,7 +130,7 @@
 					:to="{name: 'properties-id', params: {id: annonce.id} }">
 					<div class="mt-8">
 						<div
-							class="lg:px-6 py-4 mx-auto mt-4 lg:flex items-center lg:h-40 bg-white rounded-lg border-2 border-transparent hover:border-purple-800 cursor-pointer lg:shadow"
+							class="px-6 py-4 mx-auto mt-4 lg:flex items-center lg:h-40 bg-white rounded-lg border-2 border-transparent hover:border-purple-800 cursor-pointer lg:shadow"
 
 						>
 							<div class="flex-shrink-0">

@@ -2,7 +2,7 @@
 	<div class="pt-10  mx-auto block bg-gray-100  w-screen">
 		<div class="block bg-gray-100 h-full">
 
-			<div class="bg-white pt-4 py-10 mt-5 mx-32 shadow-sm border rounded-lg  hover:border-purple-800">
+			<div class="bg-white pt-4 py-10 mt-5 lg:mx-32 md:mx-16 mx-2 shadow-sm border rounded-lg  hover:border-purple-800">
 				<div class="mt-4 text-center mb-16">
 					<p class="text-3xl font-semibold text-gray-900">Rechercher</p>
 					<button
@@ -104,7 +104,7 @@
 				</form>
 			</div>
 
-			<div class="mt-8 sm:mt-4 py-5 md:px-16 ">
+			<div class="mt-8 sm:mt-4 lg:mx-0 mx-2 py-5 md:px-16 ">
 				<nuxt-link
 					v-for="annonce in annonces"
 					:key="annonce.id"

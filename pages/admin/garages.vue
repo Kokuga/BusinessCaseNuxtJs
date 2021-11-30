@@ -1,7 +1,7 @@
 <template>
 	<div class="block bg-gray-100  w-screen">
 		<div class="block bg-gray-100 h-full">
-			<div class="bg-white pt-4 py-10 mt-5 mx-32 shadow-sm border rounded-lg  hover:border-purple-800">
+			<div class="bg-white pt-4 py-10 mt-5 lg:mx-32 md:mx-16 mx-2 shadow-sm border rounded-lg  hover:border-purple-800">
 				<div class="mt-4 text-center mb-8">
 					<p class="text-3xl font-semibold text-gray-900">Rechercher</p>
 					<div class="flex mt-4 justify-center">
@@ -39,7 +39,7 @@
 
 				<div class="mt-8 md:px-16">
 					<div
-						class="lg:px-6 py-4 mx-auto mt-4 lg:flex items-center lg:h-40 bg-white rounded-lg border-2 border-transparent hover:border-purple-800 cursor-pointer lg:shadow"
+						class="px-6 py-4 mx-auto mt-4 lg:flex items-center lg:h-40 bg-white rounded-lg border-2 border-transparent hover:border-purple-800 cursor-pointer lg:shadow"
 
 					>
 						<div class="flex-shrink-0">

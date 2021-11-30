@@ -1,10 +1,10 @@
 <template>
 	<div class="block bg-gray-100  w-screen">
 		<div class="block bg-gray-100 h-full">
-			<div class="bg-white pt-4 py-10 mt-5 mx-32 shadow-sm border rounded-lg  hover:border-purple-800">
+			<div class="bg-white pt-4 py-10 mt-5 lg:mx-32 md:mx-16 mx-2 shadow-sm border rounded-lg  hover:border-purple-800">
 				<div class="mt-4 text-center mb-16">
 					<p class="text-3xl font-semibold text-gray-900">Rechercher</p>
-					<div class="mx-12 flex mt-5 justify-between">
+					<div class="mx-12 flex flex-wrap mt-5 justify-between">
 						<nuxt-link
 							:to="{name: 'admin-properties'}"
 							class="text-gray-100 rounded-2xl p-3 bg-purple-500 border border-purple-500 hover:bg-purple-600 hover:transform hover:scale-125"
@@ -17,7 +17,7 @@
 						</nuxt-link>
 						<nuxt-link
 							:to="{name: 'admin-users'}"
-							class="text-gray-100 rounded-2xl p-3 bg-purple-500 border border-purple-500 hover:bg-purple-600 hover:transform hover:scale-125"
+							class="text-gray-100 rounded-2xl mt-2 p-3 bg-purple-500 border border-purple-500 hover:bg-purple-600 hover:transform hover:scale-125"
 						>Voir les professionnels
 						</nuxt-link>
 					</div>
